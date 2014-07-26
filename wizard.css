@@ -1,0 +1,28 @@
+body{
+    background-color: #4d4d4f;
+    color: #FFFFFF;
+}
+
+#title{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#myCanvas{
+    border:1px solid #FFFFFF;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 640px;
+    height: 480px;
+}
+
+#description{
+    text-align: center;
+}
+
+#footnote{
+    text-align: center;
+}
