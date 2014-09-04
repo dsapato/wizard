@@ -1,4 +1,4 @@
-var Meteor = function(){
+var Item = function(){
 
     const MOVE_SPEED = 3;
 
@@ -8,9 +8,9 @@ var Meteor = function(){
         this.width = 20;
         this.height = 20;
         this.image = new Image();
-        this.image.src = "resources/meteor1.png";
+        this.image.src = "resources/itemLife.png";
         this.xPos = 1200 + (Math.random() * 500);
-        this.yPos = Math.random() * 2000  + Player.yPos - 1000;
+        this.yPos = Math.random() * 1640  + Player.yPos - 500;
         this.vy = Math.random() * 2 - 1;
     }
 
@@ -34,10 +34,10 @@ var Meteor = function(){
             if(this.yPos + this.height > playerY){
                 if(this.xPos < playerX + playerWidth){
                     if(this.xPos + this.width > playerX){
-                        Player.hit();
+                        Player.addLife();
                         //Effectly explode
                         this.xPos = 640;
-                        this.yPos = Math.random() * 2000  + playerY - 1000;
+                        this.yPos = Math.random() * 1640  + playerY - 500;
                     }
                 }
             }
